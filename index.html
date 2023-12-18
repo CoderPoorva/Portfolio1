@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="5.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div class="row1">
+                <div class="col-1">
+                    <p>Hello</p>
+                    <h1>I'm  <span>Poorva</span> Adhikary From India</h1>
+                </div>
+                
+            <div class="pic">
+                <img src="6.jpg" alt="">
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ABOUT---------------------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Myself Poorva Adhikary, a undergraduate student who aims to do something great in her life. I am friendly soul who loves to help others in every possible way.Being an active student, I was a regular participant in co-ciricular activities in school.During my school days,I had also lead my team during sports. <br>
+                I love to solve riddles and problems in the most creative way which landed me in doing Btech in Computer Science and engineering. I had atteneded many presitigious tech events. To name a few, Google I/O extended kolkata -2023, Crypto Carnival-EduHub kolkata-2023, Polygon guild DevX Tour -2023, Cloud Native Computing Foundation - Hooghly and many more.  <br>
+                Since childhood I have a keen interest in creative things so art is my passion. I had participated in number of competitions and also secured positions in them. To see few of my artworks, go to my instagram account(link given in the contact section). I have training in classical dance form- Kathak.Apart from it, I love travelling places, exploring old historical sites.  
+                </p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick= "opentab('education')">Education</p>
+                <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+             </div>
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Problem Solving</span><br>Java,C</li>
+                    <li><span>Web Development</span><br>Html,Css,JavaScript</li>
+                    <li><span></span></li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="hobbies">
+                <ul>
+                    <li><span>Painting</span><br>Water Color,Pencil Shadding(Graphite & Charcoal), Oil, Opaque,Ink and others</li>
+                    <li><span>Dancing</span><br>Kathak</li>
+                    <li><span>Listening to Musics</span>Old Retro,Classics and more</li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2026</span><br>Computer Science Engineering from Meghnad Saha Institute Of Technology </li>
+                    <li><span>2006-2022</span><br>Completed Schooling with 95% in 10th std and 93% in 12th std.</li>
+                    <li><span></span></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -------------SERVICES------------- -->
+
+   <!-- -----------------PROJECTS--------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="3.jpg" alt="">
+                <div class="layer">
+                    <h3>Grocy-Grocery Website</h3>
+                    <p>Online Website to buy Fresh fruits, vegetables and other grocery items</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="1.jpg" alt="">
+                <div class="layer">
+                    <h3>Gaanafy-Music Website</h3>
+                    <p>Play and Listen to your favourite songs</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="7.webp" alt="">
+                <div class="layer">
+                    <h3>Coming soon</h3>
+                    <p>woking on something new</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+   </div>
+
+   <!-- ------------------Contacts------------ -->
+   
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> adhikarypoorvaraja@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 9876543210</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/poorva-adhikary-367458256/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/poorva.2002/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/CoderPoorva"><i class="fa-brands fa-github"></i></a>
+                    <div class="btn btn2">Download CV <h5>(not yet ready)</h5></div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © Poorva. Made with <i class="fa-solid fa-heart" style="color: #f570d2;"></i> </div>
+   </div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+</script>
+
+<script src="https://kit.fontawesome.com/1b45767895.js" crossorigin="anonymous"></script>
+</body>
+</html>
